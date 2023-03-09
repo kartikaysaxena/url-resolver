@@ -13,6 +13,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.get('/',(req,res) => {
   res.render('view')
 })
+const PORT = process.env.PORT || 3030;
 
 
 app.post ('/', async(req,res)=> {
@@ -93,8 +94,8 @@ app.post ('/', async(req,res)=> {
   
   },time)
 })
-app.listen(3000,()=> {
-  console.log('Listening on 3000')
+app.listen(PORT,()=> {
+  console.log(`Listening on ${PORT}`)
 })
 
 
