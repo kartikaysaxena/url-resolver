@@ -5,6 +5,16 @@ const app = express();
 const url = require('url')
 app.use(express.urlencoded({extended:true}))
 
+const {join} = require('path');
+
+/**
+ * @type {import("puppeteer").Configuration}
+ */
+module.exports = {
+  // Changes the cache location for Puppeteer.
+  cacheDirectory: join(__dirname, '.cache', 'puppeteer'),
+};
+
 
 
 app.set('view engine', 'ejs')
