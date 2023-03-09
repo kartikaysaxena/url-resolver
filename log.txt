@@ -6,11 +6,11 @@ https://maps.apple.com/place?address=4706%2050%20Ave,%20St.%20Paul%20AB%20T0A%20
 https://maps.apple.com/place?address=4706%2050%20Ave,%20St.%20Paul%20AB%20T0A%203A2,%20Canada&ll=53.991561,-111.289525&q=Example%20Link&_ext=AbYpUFxEu1v+AbAxxqyaswXTW8A5zjFqF4L/AbBBWpCqWgvSW8BQBA%3D%3D&t=
 
 
-https://maps.app.goo.gl/9ivZQ71CKMqRPDtQA
+https://maps.app.goo.gl/9ivZQ71CKMqRPDtQA (not works with axios)
 https://www.google.com/maps/place/Elizi/@41.0102214,28.9739212,17z/data=!3m1!4b1!4m6!3m5!1s0x14cab996a54299cb:0x40acb197d028d115!8m2!3d41.0102214!4d28.9739212!16s%2Fg%2F1tcxl_7q
 
 
-https://www.google.com/maps/place/VGR4%2B5MC+Falafel+M.+Sahyoun,+Beirut,+Lebanon/data=!4m2!3m1!1s0x151f16e2123697fd:0x8e6626b678863990?utm_source=mstt_1&entry=gps
+https://www.google.com/maps/place/VGR4%2B5MC+Falafel+M.+Sahyoun,+Beirut,+Lebanon/data=!4m2!3m1!1s0x151f16e2123697fd:0x8e6626b678863990?utm_source=mstt_1&entry=gps (doesn't work with axios)
 https://www.google.com/maps/place/Falafel+M.+Sahyoun/@33.8904447,35.5066505,17z/data=!3m1!4b1!4m6!3m5!1s0x151f16e2123697fd:0x8e6626b678863990!8m2!3d33.8904447!4d35.5066505!16s%2Fg%2F1td7wffc
 
 
@@ -18,7 +18,7 @@ https://osm.org/go/2EE6hs--
 https://www.openstreetmap.org/#map=9/51.5108/45.6674
 
 
-https://maps.app.goo.gl/9ivZQ71CKMqRPDtQA
+https://maps.app.goo.gl/9ivZQ71CKMqRPDtQA (not works with axios)
 https://www.google.com/maps/place/Elizi/@41.0102214,28.9739212,17z/data=!3m1!4b1!4m6!3m5!1s0x14cab996a54299cb:0x40acb197d028d115!8m2!3d41.0102214!4d28.9739212!16s%2Fg%2F1tcxl_7q
 
 
@@ -26,3 +26,15 @@ https://goo.gl/maps/sXnse1erRvkA6aV99
 https://www.google.com/maps/place/Falafel+M.+Sahyoun/@33.8904447,35.5066505,17z/data=!3m1!4b1!4m6!3m5!1s0x151f16e2123697fd:0x8e6626b678863990!8m2!3d33.8904447!4d35.5066505!16s%2Fg%2F1td7wffc
 
 
+
+https://www.google.com/maps/place/Falafel+M.+Sahyoun/@33.8904447,35.5066505,17z/data=!3m1!4b1!4m6!3m5!1s0x151f16e2123697fd:0x8e6626b678863990!8m2!3d33.8904447!4d35.5066505!16s%2Fg%2F1td7wffc?utm_source=mstt_1&coh=164777&entry=tt&shorturl=1
+
+https://www.openstreetmap.org/#map=9/51.510772705078125/45.66741943359375
+
+https://www.google.com/maps/place/VGR4%2B5MC+Falafel+M.+Sahyoun,+Beirut,+Lebanon/data=!4m2!3m1!1s0x151f16e2123697fd:0x8e6626b678863990?utm_source=mstt_1&entry=gps 
+
+https://www.google.com/maps/place/Mollafenari,+Elizi,+Bab-%C4%B1+Ali+Cd.+No:27,+34120+Fatih%2F%C4%B0stanbul,+Turkey/data=!4m2!3m1!1s0x14cab996a54299cb:0x40acb197d028d115?utm_source=mstt_1&entry=gps 
+
+https://maps.apple.com/place?address=4706%2050%20Ave,%20St.%20Paul%20AB%20T0A%203A2,%20Canada&ll=53.991561,-111.289525&q=Example%20Link&_ext=AbYpUFxEu1v+AbAxxqyaswXTW8A5zjFqF4L/AbBBWpCqWgvSW8BQBA%3D%3D&t= 
+
+Listening on 3030
