@@ -30,8 +30,9 @@ const PORT = process.env.PORT || 3030;
 app.post ('/', async(req,res)=> {
 
   try {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
+    console.log('yayyy')
     
     var url = req.body.link
     const k = new URL(url)
@@ -98,10 +99,13 @@ app.post ('/', async(req,res)=> {
         const geo = new URL('geo://' + latitude + ',' + longitude)
         console.log(geo.href)
         res.redirect(geo.href)
+        await browser.close();
       }
       else {
         console.log('err')
+        await browser.close();
       }
+
     
     },time)
 
