@@ -13,7 +13,7 @@ const {join} = require('path');
  */
 module.exports = {
   // Changes the cache location for Puppeteer.
-  cacheDirectory: join(__dirname, '.cache', 'puppeteer'),
+  cacheDirectory: join(__dirname, '.cache', 'puppeteer/chrome/linux-1095492'),
 };
 
 
@@ -37,7 +37,7 @@ app.post ('/', async(req,res)=> {
     var url = req.body.link
     const k = new URL(url)
 
-    await page.goto(url, { waitUntil: 'networkidle0' });
+    await page.goto(url, { waitUntil: 'domcontentloaded' });
     var time =0;
     if ( k.hostname==='maps.app.goo.gl'){
       time=6000;
@@ -53,9 +53,10 @@ app.post ('/', async(req,res)=> {
 
 
     setTimeout(async()=> {
-      const currentUrl = await page.url();
+      const currentUrl = page.url();
       console.log(url)
       console.log(currentUrl);
+      
       console.log('\n')
       
 
@@ -99,7 +100,7 @@ app.post ('/', async(req,res)=> {
         const geo = new URL('geo://' + latitude + ',' + longitude)
         console.log(geo.href)
         res.redirect(geo.href)
-        await browser.close();
+        
       }
       else {
         console.log('err')
